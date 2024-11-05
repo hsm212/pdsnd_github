@@ -18,10 +18,10 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
 
     # Get user input for city (chicago, new york city, washington)
-    city = input('Enter city name: ').lower()
+    city = input('Enter city: ').lower()
     while city not in CITY_DATA.keys():
-        print(f'Invalid city name. Please enter {", ".join(CITY_DATA.keys())}.')
-        city = input('Enter city name: ').lower()
+        print(f'Invalid city. Please enter {", ".join(CITY_DATA.keys())}.')
+        city = input('Enter city: ').lower()
 
     # Get user input for month (all, january, february, ... , june)
     month = input('Enter month: ').lower()
